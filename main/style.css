@@ -1,0 +1,251 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url('../img/back.png');
+	background-position: center;
+	background-size: cover;
+	color: white;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+}
+nav {
+	align-items: center;
+	background-color: #0B0A0B;
+	width: 100%;
+	color: #fff;
+}
+.nav {
+	height: 12rem;
+}
+.items {
+	display: flex;
+	justify-content: end;
+	gap: 20px;
+}
+.item-ini, .item-col, .item-mex, .item-esp {
+	display: inline-block;
+	transform: translate(-7px);
+	transition: 0.3s all;
+	border-radius: 30px 30px 30px 30px;
+	cursor: pointer;
+	padding: 5px 20px;
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+nav ul li:last-of-type {
+	margin-right: 2rem;
+}
+nav ul {
+	float: right;
+	padding-top: 90px;
+}
+nav ul li:nth-child(2) {
+	list-style: none;
+}
+.item-ini a, .item-col a, .item-mex a, .item-esp a {
+    border-radius: 5px;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: white;
+}
+.item-ini:hover a{
+	background-color: #fff;
+	color: black;
+}
+input[type="checkbox"] {
+	display: none;
+}
+a:active {
+	color: white;
+}
+.imglogo {
+	margin-left: 50px;
+	padding-top: 45px;
+	width: 115px;
+}
+
+.drop-col, .drop-mex, .drop-esp {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1.4rem;
+    background-color: white;
+    width: 15rem;
+    padding: 0.7rem;
+}
+
+.drop-col{
+    transform: translateX(-1rem) translateY(1rem);
+}
+
+.drop-mex{
+    transform: translateX(-1rem) translateY(1rem);
+}
+
+.drop-esp{
+	transform: translateX(-0.3rem) translateY(1rem);
+
+}
+
+.drop-col li, .drop-mex li, .drop-esp li {
+    list-style: none;
+    font-size: 1.06rem;
+    width: 100%;
+	height: 36px;
+	border-radius: 7px;
+	justify-content: center;
+}
+
+.drop-col li:hover, .drop-mex li:hover, .drop-esp li:hover {
+    background-color: gray;
+}
+
+.drop-col li a, .drop-mex li a, .drop-esp li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.check-col:checked ~ .drop-col,
+.check-mex:checked ~ .drop-mex,
+.check-esp:checked ~ .drop-esp {
+    display: flex;
+}
+
+label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+label:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/*nav llega hasta aqui*/
+.article1 {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.article1 > p{
+	font-size: 1.2rem;
+	margin: 2rem;
+}
+.article1 > .video {
+	display: inline-block;
+	margin-top: 40px;
+}
+
+.article2 {
+	margin: 70px;
+	border-radius: 15px 15px 15px 15px;
+	background-color: #fff;
+	padding: 50px;
+	width: 90%;
+	height: 50%;
+	color: black;
+	font-size: 1.1rem;
+}
+
+.texto{
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.image1 {
+	width: 26rem;
+	float: left;
+	border-radius: 10px;
+}
+
+.article2 > h2 {
+	text-align: center;
+	margin-left: 30rem;
+}
+
+.article3 {
+	margin-inline: auto;
+	border-radius: 15px;
+	background-color: #fff;
+	padding: 40px;
+	width: 80%;
+	color: black;
+	font-size: 1.1rem;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.text{
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.image2{
+	float: right;
+	width: 26rem;
+	border-radius: 10px;
+}
+
+.article3 > h2 {
+	text-align: center;
+	margin-right: 24rem;
+}
+
+.botoncontainer {
+	transition: 0.4s ease;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: #222323;
+	width: 13rem;
+	text-align: center;
+}
+.botoncontainer :hover .boton {
+	color: #fff;
+}
+.botoncontainer a {
+	text-decoration: none;
+	color: #ffff;
+}
+.boton {
+	padding: 15px;
+}
+.botoncontainer:hover {
+	background-color: black;
+	color: white;
+}
+
+.social a {
+	text-decoration: none;
+}
+.social {
+	padding-top: 2.6rem;
+
+.red {
+	margin: 20px auto;
+	overflow: hidden;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.red:hover {
+		transform: translateY(-5px);
+}
+
+}
+footer {
+	background-color: #0B0A0B;
+	text-align: center;
+	line-height: 30px;
+}
+footer > address {
+	color: #FFFFFFE3;
+}

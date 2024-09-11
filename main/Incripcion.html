@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN WEST</title>
+    <link rel="stylesheet" href="inscrip.css">
+    <link rel="shortcut icon" href="../img/icons8-restaurante-100.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class='nav'>
+            <a href="Princip.html">
+                <img class='imglogo' src="../img/logo.png" alt="Logo de la cocina">
+            </a>
+            <ul class='items'>
+                <li class='item-ini'><a href="Princip.html">Inicio</a></li>
+                <li class='item-ini'><a href="Incripcion.html">Inscribete</a></li>
+                <li class="item-col">
+                    <input type="checkbox" class='check-col' id="show-col">
+                    <label for="show-col">Recetas Colombia</label>
+                    <ul class="drop-col">
+                        <li><a href="../recetasCol/Sancochodegallina.html">Sancocho</a></li>
+                        <li><a href="../recetasCol/Bandejapaisa.html">Bandeja Paisa</a></li>
+                        <li><a href="../recetasCol/AjiacoSan.html">Ajiaco Santafereño</a></li>
+                        <li><a href="../recetasCol/tamales.html">Tamales</a></li>
+                    </ul>
+                </li>
+                <li class="item-mex">
+                    <input type="checkbox" class='check-mex' id="show-mex">
+                    <label for="show-mex">Recetas México</label>
+                    <ul class="drop-mex">
+                        <li><a href="../Recetasmex/Tacosalpast.html">Tacos al pastor</a></li>
+                        <li><a href="../Recetasmex/nopales.html">Nopales</a></li>
+                        <li><a href="../Recetasmex/quesadillas.html">Quesadillas</a></li>
+                        <li><a href="../Recetasmex/calabacitas.html">Calabacitas rellenas</a></li>
+                    </ul>
+                </li>
+                <li class="item-esp">
+                    <input type="checkbox" class='check-esp' id="show-esp">
+                    <label for="show-esp">Recetas España</label>
+                    <ul class="drop-esp">
+                        <li><a href="../RecetasEsp/tortillas.html">Tortilla de patatas</a></li>
+                        <li><a href="../RecetasEsp/Gazpachos.html">Gazpacho de patatas</a></li>
+                        <li><a href="../RecetasEsp/patatasbrav.html">Patatas bravas</a></li>
+                        <li><a href="../RecetasEsp/croquetas.html">Croquetas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class='container'>
+        <div class="art">
+            <article>
+                <h1>¡Inscribite Ya!</h1>
+                <p>
+                    ¿Quieres sorprender a tus seres queridos con platos deliciosos? ¡Nuestro curso de cocina te enseñará todo lo que necesitas saber! !Mejora tus habilidades culinarias! ¡Aprende nuevas recetas y técnicas en nuestro curso de cocina! Inscríbete ya y despierta al chef que llevas dentro.
+                </p>
+                <br>
+                <p>
+                    ¡No te quedes con las ganas de cocinar como un profesional! Inscríbete hoy mismo en nuestro curso de cocina y ¡manos a la obra! 
+                </p>
+
+                <img class='img' src="../img/chef-5993951_1280.jpg" alt="">
+            </article>
+        </div>
+        
+        <div class='form'>
+            <form>
+            <h2>Formulario de Inscripción</h2>
+                <h3 for="nombre">Nombre completo:</h3>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <h3 for='Numero'>Numero de telefono</h3>
+                <input type="number" id='Numero' name='Numero' required>
+                <h3 for="email">Correo electrónico:</h3>
+                <input type="email" id="email" name="email" required>
+
+                <h3 for="horario">Horario:</h3>
+                    <select id="horario" name="horario">
+                        <option value="opcion1">10:00 Am a 2:00 Pm </option>
+                        <option value="opcion2">2:00 Pm a 6:00 Pm</option>
+                        <option value="opcion3">6:00 Pm a 10:00 Pm</option>
+                    </select>
+
+                <h3 for="sede">Sede:</h3>
+                    <select id="sede" name="sede">
+                        <option value="opcion1">Pilarica</option>
+                        <option value="opcion2">Exito de Robledo</option>
+                        <option value="opcion3">San Cristobal</option>
+                    </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+    </body>
+    </html>
